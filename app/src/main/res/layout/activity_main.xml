@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#ffffff"
+                                                   tools:context=".MainActivity">
+
+    <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="327dp"
+            android:layout_height="314dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:width="327dp"
+            android:height="314dp"
+            android:viewportWidth="327"
+            android:viewportHeight="314"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/login_foreground"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+            android:id="@+id/btn-login"
+            android:layout_width="122dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="#192A56"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+            android:id="@+id/editText2"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Usuário"
+            android:textColor="@color/btnLogin"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_login" />
+
+    <EditText
+            android:id="@+id/editText3"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Login"
+            android:textColor="@color/btnLogin"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
